@@ -1,0 +1,273 @@
+body
+{
+	font-family: Helvetica;
+	font-size: 14px;
+}
+
+header
+{
+	background-image: url(../Img/header.jpg);
+	background-size: cover;
+	background-position: center;
+	min-height: 662px;
+}
+
+/* Styling the nav bar */
+
+.navbar-brand
+{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	font-size: 17px;
+	opacity: 1;
+
+}
+
+.bg-dark
+{
+	background-color: transparent !important;
+}
+.line
+{
+	height: 1px;
+	width: 100%;
+	background-color: #fff;
+}
+
+header section
+{
+	color: #fff;
+}
+header section h1
+{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 50px;
+/* Adding Animation*/
+	animation-name: SectionMoveRight;
+	animation-duration: 1s;
+}
+
+
+@keyframes SectionMoveRight
+{
+	0%{transform: translateX(1000px);}
+	100%{transform: translateX(0);}
+}
+
+header section .line
+{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 50px;
+/* Adding Animation*/
+	animation-name: SectionMoveLeft;
+	animation-duration: 1s;
+}
+
+@keyframes SectionMoveLeft
+{
+	0%{transform: translateX(-1000px);}
+	100%{transform: translateX(0);}
+}
+header section p
+{
+	color: rgba(255,255,255,.7);
+	letter-spacing: 1px;
+	font-size: 20px;
+	opacity: 0;
+/* Adding Animation*/
+	animation-delay: 1s;
+	animation-name: ContentOpacity;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+}
+header section button
+{
+	padding: 12px 30px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	text-transform: uppercase;
+	background-color: rgba(229,24,24,1.00);
+	border-radius: 300px;
+	border: none;
+	opacity: 0;
+/* Adding Animation*/
+	animation-delay: 1s;
+	animation-name: ContentOpacity;
+	animation-duration: 1s;
+  	animation-fill-mode: forwards;
+  	animation-timing-function: ease-in;
+}
+
+@keyframes ContentOpacity
+{
+	0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+header section button:hover
+{
+
+	background-color: rgba(229,24,24,0.9);
+	opacity: 0.9;
+}
+
+/* Starting Section 2*/
+
+section p
+{
+	color: rgba(255,255,255,.7);
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+section h2
+{
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.orng
+{
+	background-color: #f05f40;
+	overflow: hidden;
+}
+
+section button
+{
+	padding: 20px 40px;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 300px;
+	border: none;
+}
+
+section button:hover
+{
+
+	background-color: rgba(255, 255, 255, 0.9);
+	opacity: 0.8;
+}
+
+.sc2wdth
+{
+	width: 45%;
+}
+
+.sec4style h1
+{
+	color: rgba(0,0,0,.9);
+	font-size: 30px;
+}
+.sec4style h2
+{
+	color: rgba(0,0,0,.9);
+	font-size: 30px;
+}
+
+.sec4style p
+{
+	color: rgba(0,0,0,.6);
+	font-size: 15px;
+	font-weight: bolder;
+}
+
+.sec4style i
+{
+	color: #f05f40;
+}
+
+/* Styling the figures section */
+
+.project
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.project img
+{
+	position: relative;
+	z-index: -30;
+}
+
+.project .caption5
+{
+	background-color: rgba(240, 95, 64, .7);
+	height: 0;
+	overflow: hidden;
+	transition: all 1.2s;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+
+.caption5 p
+{
+	font-size: 30px;
+	font-weight: bolder;
+	transition-delay: 2s; /* msh 3arf leeh msh sha3'al */
+	transition: all 1.2s;
+}
+
+.project:hover .caption5
+{
+	height: 100%;
+	cursor: pointer;
+}
+
+.project:hover .caption5 p
+{
+	transform: scale(1.2,1.2);
+}
+
+/* styling last section */
+
+.lastCaption h2
+{
+	color: rgba(0,0,0,.6);
+	font-size: 30px;
+	font-weight: bolder;
+}
+.lastCaption p
+{
+	color: rgba(0,0,0,.6);
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.lastContact p
+{
+	color: rgba(0,0,0,.6);
+	font-size: 25px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.lastContact i
+{
+	position: relative;
+/* Adding Animation*/
+	animation-delay: 1s;
+	animation-name: ContentOpacity;
+	animation-duration: 1s;
+  	animation-fill-mode: forwards;
+  	animation-timing-function: ease-in;
+}
+
+@keyframes ContentOpacity
+{
+	0%{opacity: 0; top: -100px;}
+    100%{opacity: 1; top: 0;}
+}
+
+.mailstyle p:hover
+{
+	color: #f05f40;
+	cursor: pointer;
+}
